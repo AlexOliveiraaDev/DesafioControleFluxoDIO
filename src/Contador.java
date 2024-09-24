@@ -1,9 +1,12 @@
 public class Contador {
-    public static Double[] contador(double n1, double n2) throws ParametrosInvalidosException {
+    public static void contador(double n1, double n2) throws ParametrosInvalidosException {
     if (n2 < n1){
         throw new ParametrosInvalidosException();
     }
     else {
-        return null
+        for(double i = n1; i <= n2; i++){
+            System.out.println("Imprimindo valor: " + i);
+            }
+        }
     };
 }
